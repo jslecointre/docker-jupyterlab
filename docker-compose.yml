@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  jupyterlab:
+    build: .
+
+    ports:
+      - 8888:8888
+    volumes:
+      - ./home:/home/jovyan
+
+    command:
+      - --NotebookApp.password="${PASSWORD}"
+
+    restart: always
+
+    env_file: .env
+    environment:
+      PASSWORD:
