@@ -7,10 +7,10 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - ./home:/home/jovyan
+      - ./datadir:/work
 
     command:
-      - --NotebookApp.password="${PASSWORD}"
+      - --NotebookApp.password="${PASSWORD}" --NotebookApp.notebook_dir=/work
 
     restart: always
 
