@@ -1,0 +1,8 @@
+.env.example
+.git
+.gitignore
+LICENSE
+README.md
+datadir
+docker-compose.yml
+makepassword.sh
