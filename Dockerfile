@@ -18,4 +18,4 @@ VOLUME /work
 
 HEALTHCHECK --interval=5m --timeout=10s CMD curl -sS -o /dev/null http://$HOSTNAME:8888/lab?health_check || exit 1
 
-ENTRYPOINT ["start.sh", "jupyter", "lab"]
+ENTRYPOINT ["start.sh", "jupyter", "lab", "--NotebookApp.notebook_dir=/work"]
