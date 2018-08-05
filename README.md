@@ -12,7 +12,7 @@ Or, write [hashed password](http://ipython.readthedocs.io/en/stable/api/generate
 2. Run
 
 ``` shell
-$ docker run -v ./datadir:/work jupyterlab --NotebookApp.password="${JUPYTERLAB_PASSWORD}"
+$ docker run -v ./datadir:/work macrat/jupyterlab --NotebookApp.password="${JUPYTERLAB_PASSWORD}"
 ```
 
 Or, use docker-compose.
