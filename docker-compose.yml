@@ -9,8 +9,7 @@ services:
     volumes:
       - ./datadir:/work
 
-    command:
-      - --NotebookApp.password="${PASSWORD}" --NotebookApp.notebook_dir=/work
+    command: --NotebookApp.password="${JUPYTERLAB_PASSWORD}" --NotebookApp.notebook_dir=/work
 
     restart: always
 
