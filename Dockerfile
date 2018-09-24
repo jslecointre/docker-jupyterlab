@@ -11,7 +11,7 @@ RUN mkdir /work && chown jovyan:jovyan /work
 USER 1000:1000
 RUN rmdir /home/jovyan/work && ln -s /work /home/jovyan/work
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
-RUN pip install chainer tensorflow opencv-python tables
+RUN pip install chainer tensorflow keras opencv-python tables
 
 EXPOSE 8888
 VOLUME /work
